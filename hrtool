@@ -12,7 +12,8 @@ BASEDIR=$(dirname $(readlink -f ${BASH_SOURCE[0]}))
 HR_VERSION=0.1.2
 
 PROJECT=${PROJECT:-HEAD}
-OPENCOG_REPOS=(cogutils atomspace opencog ros-behavior-scripting relex external-tools)
+#changed cogutils to cogutil
+OPENCOG_REPOS=(cogutil atomspace opencog ros-behavior-scripting relex external-tools)
 HR_REPOS=($PROJECT)
 GITHUB_STORAGE_URL=https://raw.githubusercontent.com/hansonrobotics/binary_dependency/master
 declare -A MD5SUMS
