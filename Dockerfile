@@ -15,11 +15,11 @@ RUN apt-get -y install software-properties-common
 RUN apt-get -y install  libgl1-mesa-dev-lts-trusty 
 # I added these next lines because cmake wants GCC 5.0 or higher:
 
-RUN add-apt-repository ppa:ubuntu-toolchain-r/test
+#RUN add-apt-repository ppa:ubuntu-toolchain-r/test
+#RUN apt-get -y update
+#RUN apt-get -y install gcc g++ gcc-5 g++-5 
 RUN apt-get -y update
-RUN apt-get -y install gcc g++ gcc-5 g++-5 
-RUN apt-get -y update
-RUN sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
+#RUN sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
 
 
 
