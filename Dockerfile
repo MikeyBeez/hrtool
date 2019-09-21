@@ -22,12 +22,20 @@ RUN sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slav
 
 
 
+
+
 #RUN wget https://raw.githubusercontent.com/hansonrobotics/HEAD/master/scripts/hrtool -O /tmp/hrtool
 RUN wget https://raw.githubusercontent.com/MikeyBeez/hrtool/master/hrtool -O /tmp/hrtool
 RUN chmod +x /tmp/hrtool
 RUN mkdir ~/hansonrobotics
-RUN  /tmp/hrtool -i
-RUN  /tmp/hrtool -G
-RUN rm /tmp/hrtool
-RUN ~/hansonrobotics/HEAD/scripts/hrtool -B
+RUN cd ~/hansonrobotics
+RUN git clone https://github.com/opencog/opencog.git  
+RUN git clone https://github.com/opencog/atomspace.git
+RUN git clone https://github.com/opencog/moses.git
+RUN git clone https://github.com/opencog/cogutil.git
+
+#RUN  /tmp/hrtool -i
+#RUN  /tmp/hrtool -G
+#RUN rm /tmp/hrtool
+#RUN ~/hansonrobotics/HEAD/scripts/hrtool -B
 
