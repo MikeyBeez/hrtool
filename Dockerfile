@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -y update
 RUN apt-get -y install wget
 RUN apt-get -y install bc
-RUN apt-get install curl
+RUN apt-get -y install curl
 RUN apt-get -y install git
 RUN apt-get -y install dpkg
 RUN apt-get -y install  libgl1-mesa-dev-lts-trusty 
