@@ -12,7 +12,8 @@ RUN apt-get -y install curl
 RUN apt-get -y install git
 RUN apt-get -y install dpkg
 RUN apt-get -y install software-properties-common
-RUN apt-get -y install  libgl1-mesa-dev-lts-trusty 
+RUN apt-get -y install  libgl1-mesa-dev-lts-trusty
+RUN apt-get -y install cmake
 # I added these next lines because cmake wants GCC 5.0 or higher:
 
 #RUN add-apt-repository ppa:ubuntu-toolchain-r/test
