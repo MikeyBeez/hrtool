@@ -29,7 +29,7 @@ RUN sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slav
 RUN wget https://raw.githubusercontent.com/MikeyBeez/hrtool/master/hrtool -O /tmp/hrtool
 RUN chmod +x /tmp/hrtool
 RUN mkdir ~/hansonrobotics
-RUN cd ~/hansonrobotics
+WORKDIR ~/hansonrobotics
 RUN git clone https://github.com/opencog/opencog.git  
 RUN git clone https://github.com/opencog/atomspace.git
 RUN git clone https://github.com/opencog/moses.git
