@@ -7,7 +7,7 @@ if test x"$TAINER" != x; then
 	echo -n 'Stopping leftover container.. '
 	docker stop -t 1 $TAINER
 fi
-TAINER=`docker ps -a |grep my-hr-head
+TAINER=`docker ps -a |grep my-hr-head`
 if test x"$TAINER" != x; then
 	echo -n 'Removing.. '
 	docker rm my-hr-head
