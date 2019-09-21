@@ -310,7 +310,7 @@ install_opencog_deps() {
     )
     apt_get_install "${pkgs[@]}"
 
-    wget http://raw.github.com/opencog/ocpkg/master/ocpkg && chmod ugo+rx ocpkg && ./ocpkg -v
+    wget https://raw.githubusercontent.com/MikeyBeez/hrtool/master/ocpkg && chmod ugo+rx ocpkg && ./ocpkg -v
 
     #wget http://raw.github.com/opencog/ocpkg/master/ocpkg -qO octool
     #chmod +rx octool
